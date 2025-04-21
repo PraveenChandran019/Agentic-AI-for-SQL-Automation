@@ -1,9 +1,9 @@
 # Agentic-AI-for-SQL-Automation
 
-🧠 Agentic SQL Assistant
+## 🧠 Agentic SQL Assistant
 A conversational AI-powered SQL assistant that translates natural language questions into SQL queries, executes them, and returns both query results and a data analyst-style report. Built with FastAPI, LangChain, and Streamlit, and powered by Groq’s LLaMA3 model.
 
-🚀 Features
+## 🚀 Features
 🔍 Converts natural language queries into executable SQL.
 
 📊 Returns both data (in DataFrame format) and analytical reports.
@@ -16,18 +16,18 @@ A conversational AI-powered SQL assistant that translates natural language quest
 
 📝 Optional feedback collection after each query.
 
-🧱 Tech Stack
+## 🧱 Tech Stack
 
 Component	Technology
 
-LLM  -	Groq’s LLaMA3 (via LangChain)
-Framework	- LangChain, LangGraph (ReAct Agent)
-Backend	- FastAPI, Pydantic
-Frontend -	Streamlit
-Database -	MySQL, PostgreSQL, SQLite
-Tools	- SQLAlchemy
+LLM  -	Groq’s LLaMA3 (via LangChain);
+Framework	- LangChain, LangGraph (ReAct Agent);
+Backend	- FastAPI, Pydantic;
+Frontend -	Streamlit;
+Database -	MySQL, PostgreSQL, SQLite;
+Tools	- SQLAlchemy;
 
-Hosting	Localhost (Dev)
+## Hosting	Localhost (Dev)
 ⚙️ Setup Instructions
 
 1. Clone the Repository
@@ -54,7 +54,8 @@ uvicorn backend:app --reload
 bash
 Copy code
 streamlit run streamlit.py
-🧪 API Endpoints
+
+## 🧪 API Endpoints
 GET / — Health check
 
 GET /dialects — List supported SQL dialects
@@ -66,30 +67,31 @@ POST /raw_query — Returns raw message history from the LLM agent
 POST /feedback — Stores user feedback and ratings
 
 
-Copy code
+## Copy code
 ├── backend.py           # FastAPI backend with LangChain agent
 ├── streamlit.py         # Streamlit frontend UI
 ├── requirements.txt     # Python dependencies
 ├── chinook.db           # Sample SQLite database
 
-🛡️ Security Notes
+## 🛡️ Security Notes
 No login/CAPTCHA required for access.
 
 App does not expose or process confidential client/company data.
 
 Only metadata and non-sensitive public queries are processed.
 
-📌 Limitations
+## 📌 Limitations
 Currently tested on SQLite; other dialects (MySQL/PostgreSQL) need valid credentials.
 
 No authentication or user management is implemented yet.
 
 Model responses may vary based on query complexity and data availability.
 
-📬 Feedback
+## 📬 Feedback
 User feedback is stored locally in feedback.json for improvement purposes. Each query allows optional rating and comments.
 
-🧠 Future Enhancements
+## 🧠 Future Enhancements
+
 ✅ User authentication and session history
 
 ✅ Enhanced database schema visualization
