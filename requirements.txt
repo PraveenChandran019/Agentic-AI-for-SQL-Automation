@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+pydantic
+requests
+pandas
+sqlalchemy
+streamlit
+langchain
+langchain-core
+langchain-community
+langchain-groq
+langgraph
